@@ -76,6 +76,7 @@ function createRock(x) {
   GAME.appendChild(rock)
    
    
+    window.requestAnimationFrame(createRock)
 
 
   /**
@@ -111,7 +112,6 @@ function createRock(x) {
   if(top > 400){
     rock.remove()
   } else {
-    window.requestAnimationFrame(moveRock)
   }
   
   if(checkCollision(rock)){
