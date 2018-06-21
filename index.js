@@ -111,7 +111,7 @@ function createRock(x) {
   if(top > 400){
     GAME.remove(rock)
   } else {
-    
+     window.requestAnimationFrame(moveRock)
   }
   
   if(checkCollision(rock)){
