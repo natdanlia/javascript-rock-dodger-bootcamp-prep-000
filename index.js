@@ -106,7 +106,7 @@ function createRock(x) {
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   
-  
+  rock.style.top = `${top + 2}px`
   
   
   ROCKS.push(rock)
