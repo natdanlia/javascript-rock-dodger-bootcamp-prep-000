@@ -108,6 +108,13 @@ function createRock(x) {
   
   rock.style.top = `${top + 2}px`
   
+  if(top > 400){
+    GAME.remove(rock)
+  }
+  
+  if(checkCollision(rock)){
+    return endGame()
+  }
   
   ROCKS.push(rock)
 
