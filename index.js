@@ -115,7 +115,7 @@ function createRock(x) {
   }
   
   if(checkCollision(rock)){
-    return endGame()
+    // return endGame()
   }
   
   ROCKS.push(rock)
