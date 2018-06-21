@@ -76,7 +76,7 @@ function createRock(x) {
   GAME.appendChild(rock)
    
    
-  // window.requestAnimationFrame(createRock)
+  window.requestAnimationFrame(createRock)
 
 
   /**
