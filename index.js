@@ -76,7 +76,7 @@ function createRock(x) {
   GAME.appendChild(rock)
    
    
-  window.requestAnimationFrame(createRock)
+ 
 
 
   /**
@@ -115,6 +115,8 @@ function createRock(x) {
  
   if(checkCollision(rock)){
     return endGame()
+  } else{
+     window.requestAnimationFrame(moveRock)
   }
   
   ROCKS.push(rock)
