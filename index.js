@@ -151,14 +151,15 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   
-   if (LEFT_ARROW.which){
-     moveDodgerLeft()
-   }
-   
-   if (RIGHT_ARROW.which){
-     moveDodgerRight()
-   }
+const code = e.which
+
+
+  if (code === LEFT_ARROW) {
+    moveDodgerLeft()
+  } else if (code === RIGHT_ARROW) {
+    moveDodgerRight()
+  }
+
    
 }
 
