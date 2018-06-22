@@ -139,7 +139,6 @@ function endGame() {
   document.removeEventListener('keydown', moveDodger)
 
 
-  return alert('YOU LOSE!')
   
 }
 
