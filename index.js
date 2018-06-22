@@ -152,6 +152,9 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    
+   if (LEFT_ARROW.which){
+     moveDodgerLeft()
+   }
    
 }
 
