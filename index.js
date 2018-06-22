@@ -136,7 +136,7 @@ function endGame() {
 
   ROCKS.forEach(function(rock) { rock.remove() })
 
-  document.removeEventListener('keydown', moveDodger)
+  window.removeEventListener('keydown', moveDodger)
 
 
   
@@ -162,7 +162,12 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 
-  
+    var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
+ 
+  if (left > 0) {
+    dodger.style.left = `${left - 1}px`
+  }
 
   
   
